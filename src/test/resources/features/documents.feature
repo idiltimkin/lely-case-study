@@ -2,7 +2,7 @@ Feature: Verification of Document Viewing and Download for "Luna EUR"
 
   Scenario: User verifies document features for "Luna EUR"
     Given the user is on the Technical documents page of the Lely website
-    And the user accepts cookies
+    And the user accepts cookies for documents page
     When the user clicks on the dropdown menu
     When the user enters "LUNA EUR" the selected word into the textarea
     And  the following results should be shown

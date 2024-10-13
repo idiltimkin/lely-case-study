@@ -19,13 +19,15 @@ public class DocumentPageSteps {
         driver.get("https://www.lely.com/techdocs/");
     }
 
-    @Given("the dropdown menu is visible")
-    public void the_dropdown_menu_is_visible() {
+    @Given("the user accepts cookies for documents page")
+    public void the_user_accepts_cookies_for_documents_page() {
+
         technicalDocumentsPage.acceptCookies();
     }
 
     @When("the user clicks on the dropdown menu")
     public void the_user_clicks_on_the_dropdown_menu() {
+
         technicalDocumentsPage.clickDocumentDropdown();
     }
 
@@ -42,6 +44,7 @@ public class DocumentPageSteps {
 
     @Then("verify links are opening in new tab")
     public void verify_links_are_opening_in_new_tab() {
+
         technicalDocumentsPage.assertLinksTargetIsBlank();
     }
 
